@@ -1,0 +1,152 @@
+@media (max-width: 800px) {
+  /* Nav Section */
+  #nav {
+    background-color: rgba(230, 230, 250, 0.95);
+  }
+  #nav .container {
+    flex-direction: column;
+  }
+  #nav .container .mobile-navbar-icon {
+    display: flex;
+    gap: 20px;
+  }
+  /*#nav .container .mobile-navbar-icon li {
+		padding: 0 20px;
+	}*/
+  #nav .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+  }
+  #nav .navbar-brand span {
+    display: block;
+  }
+  #nav .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0;
+    gap: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    /*		display: none;*/
+  }
+  #nav .navbar-menu li {
+    padding: 5px 20px;
+    /*		text-align: center;*/
+  }
+  #nav .navbar-menu li:hover {
+    /*		background-color: rgba(255, 255, 255, 0.6);*/
+    background-color: deeppink;
+  }
+  #nav .navbar-menu.active {
+    /*		display: block;*/
+    height: 150px;
+    /*		padding: 10px 0;*/
+  }
+  #nav .navbar-icon {
+    display: none;
+  }
+
+  /*Product Detail Section*/
+
+  #product-detail .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  /* Product Section */
+
+  .products .container .cards img {
+    height: 250px;
+  }
+
+  /* Blog Section	*/
+
+  #blog .cards {
+    flex-direction: column;
+  }
+  #blog .cards .card {
+    margin: 10px;
+  }
+  #blog .cards .card img {
+    height: 400px;
+    object-position: 100% 45%;
+  }
+  #blog .cards .card #img2 {
+    object-position: 100% 25%;
+  }
+  #blog .cards .card #img3 {
+    object-position: 100% 22%;
+  }
+
+  /*	Author*/
+  .author {
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Product Section */
+
+  .products .container .cards .card {
+    flex-basis: 45%;
+  }
+
+  /*	Collection Section*/
+
+  #collection .container {
+    flex-direction: column;
+  }
+  #collection .container .left img {
+    height: 450px;
+  }
+
+  /* Footer Section*/
+
+  #footer .container {
+    flex-direction: column;
+  }
+
+  /*	Author*/
+  .author {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  /*	Author*/
+  .author {
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    font-size: 9.5px;
+    color: white;
+    background-color: black;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Product Section */
+
+  .products .container .cards .card {
+    flex-basis: 50%;
+  }
+  .products .container .cards img {
+    height: 220px;
+  }
+
+  /*	Author*/
+  .author {
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    font-size: 9.5px;
+    color: white;
+    background-color: black;
+  }
+}
